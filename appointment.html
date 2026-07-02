@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book an Appointment | WanderLux Travel Agency</title>
+  <meta name="description" content="Request a free appointment with a WanderLux travel consultant. Tell us your preferred date and travel plans and we'll be in touch." />
+  <meta name="keywords" content="book travel appointment, travel consultant, holiday planning consultation" />
+  <meta name="author" content="WanderLux Travel Agency" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">Wander<span>Lux</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-list" id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations &amp; Services</a></li>
+        <li><a href="calculator.html">Trip Cost Calculator</a></li>
+        <li><a href="appointment.html" aria-current="page">Book Appointment</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="appointment.html" class="nav-cta">Plan My Trip</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero-page">
+      <div class="container">
+        <p class="eyebrow" style="color:rgba(255,255,255,0.85);">Talk To A Consultant</p>
+        <h1>Request an Appointment</h1>
+        <p class="lead">Tell us a little about your trip and your preferred date. A WanderLux
+          consultant will confirm a time that works for you.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="two-col" style="align-items:flex-start;">
+
+        <div class="form-card reveal">
+          <h2 style="margin-bottom:1rem;">Your details</h2>
+          <form id="appointment-form" novalidate>
+
+            <div class="field">
+              <label for="apt-name">Full name</label>
+              <input type="text" id="apt-name" name="name" data-validate="required" data-required-msg="Please enter your full name." autocomplete="name" required />
+              <p class="error-msg" id="apt-name-error" role="alert"></p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="apt-email">Email address</label>
+                <input type="email" id="apt-email" name="email" data-validate="required email" data-required-msg="Please enter your email address." autocomplete="email" required />
+                <p class="error-msg" id="apt-email-error" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="apt-phone">Phone number</label>
+                <input type="tel" id="apt-phone" name="phone" data-validate="required phone" data-required-msg="Please enter a contact phone number." autocomplete="tel" required />
+                <p class="error-msg" id="apt-phone-error" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="apt-date">Preferred date</label>
+              <input type="date" id="apt-date" name="preferredDate" data-validate="required futureDate" data-required-msg="Please choose your preferred appointment date." required />
+              <p class="error-msg" id="apt-date-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="apt-message">Tell us about your trip</label>
+              <textarea id="apt-message" name="message" rows="5" data-validate="required minlength" data-minlength="10" data-required-msg="Please tell us a little about your travel plans." placeholder="E.g. We're looking at a 7-day Bali trip for two in October, mid-range budget…" required></textarea>
+              <p class="error-msg" id="apt-message-error" role="alert"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Request appointment</button>
+            <p class="form-status" role="status"></p>
+          </form>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <h3>What happens next?</h3>
+          <div class="timeline mt-lg">
+            <div class="step">
+              <strong>1. We review your request</strong>
+              <p>A consultant matched to your destination reviews your message, usually within a few
+                hours during business days.</p>
+            </div>
+            <div class="step">
+              <strong>2. We confirm a time</strong>
+              <p>You'll receive a confirmation by email or phone for your preferred date, or an
+                alternative if it's unavailable.</p>
+            </div>
+            <div class="step">
+              <strong>3. We talk through your trip</strong>
+              <p>A free 20-minute call to refine your itinerary, budget, and any special requests.</p>
+            </div>
+          </div>
+          <p style="margin-top:var(--space-md);">Prefer to estimate costs first? Try the
+            <a href="calculator.html">Trip Cost Calculator</a> before your appointment.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">Wander<span>Lux</span></a>
+          <p style="font-size:0.9rem;margin-top:0.6rem;max-width:32ch;">Personalised holiday planning,
+            guided tours, and custom travel packages for every kind of traveller.</p>
+          <div class="social-row mt-lg">
+            <a href="https://facebook.com" aria-label="WanderLux on Facebook" target="_blank" rel="noopener">f</a>
+            <a href="https://instagram.com" aria-label="WanderLux on Instagram" target="_blank" rel="noopener">ig</a>
+            <a href="https://twitter.com" aria-label="WanderLux on Twitter / X" target="_blank" rel="noopener">x</a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="destinations.html">Destinations &amp; Services</a></li>
+            <li><a href="calculator.html">Trip Cost Calculator</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Plan</h4>
+          <ul>
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>123 Collins Street, Melbourne VIC 3000</li>
+            <li>+61 3 9000 1234</li>
+            <li>hello@wanderluxtravel.example</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> WanderLux Travel Agency. All rights reserved.</p>
+        <p>Built for ICT502 — Internet and Web Development (Assessment 2)</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>
